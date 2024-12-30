@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+    <style>
+        body {
+            background-color: rgb(92, 71, 112);
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Qual nome você gostaria de utilizar?')
+
+        document.writeln(`Seu nome sera ${nome}. Seu nome tem ${nome.length} letras <br/>`)
+        document.writeln(` Seu nome em letras maiscúlas: ${nome.toUpperCase()} <br/>`)
+        document.writeln(` Seu nome em letras minúsculas: ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>
