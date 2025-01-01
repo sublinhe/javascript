@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos DOM</title>
+    <style>
+        body {
+            background-color: rgb(139, 116, 67);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px ;
+        }
+
+        #mt {
+            background-color: blueviolet;
+            color: aliceblue;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 650px;
+            height: 400px;
+            line-height: 400px;
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="mt">
+        Interaja...
+    </div>
+    <script>
+        var a = document.getElementById('mt')
+        a.addEventListener('click', clicar) 
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.style.background = 'black'
+            a.innerText = 'Mushoku é o melhor anime de todos os tempos!'
+        }
+
+        function entrar() {
+          a.innerText = 'Entrou!'
+          a.style.background = 'yellow'
+        } 
+
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'red'
+        }
+    </script>
+</body>
+</html>
