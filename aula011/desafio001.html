@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta ch arset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    Qual País você mora? <input type="text" name="txtpais" id="ipais">
+    <input type="button" value="verificar" onclick="calculo()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calculo() {
+            var txtp = window.document.querySelector('input#ipais')
+            var res = document.querySelector('div#res')
+            var pais = (txtp.value)
+            res.innerHTML = `Fique de olho nas recomendações abaixo, nem todo páis pé seguro!`
+            if (pais == 'Suiça') {
+                res.innerHTML += `<p>Você está na ${pais}, relaxe pois esse páis é seguro. Dirvita-se</p>`
+            } else if (pais == 'Oeste Europeu'){
+                res.innerHTML += `<p>Você esta no ${pais}, relaxe por que nessa região a criminalidade é absolutamente baixa.</p>`
+            } else if (pais != 'Suiça', 'Oeste Europeu'){
+                res.innerHTML += `<p>Tome <strong>CUIDADO</strong>, não temos informações o suficiente par garantir nada, se estiver com medo vá para suiça.</p>`
+            }
+            
+        }
+    </script>
+</body>
+</html>
