@@ -1,1 +1,5 @@
-console.log('Tudo bem com sua pessoa?')
+var c = 1
+while (c <= 6) {
+    console.log('Seu numero é menor que 6')
+    c
+}
